@@ -4,7 +4,7 @@
     <div><secondary-button>Yeni Rezervasyon</secondary-button></div>
   </div>
   <div>
-    <step-progress></step-progress>
+    <step-progress v-if="currentStep!=='ReviewReservation'" ></step-progress>
     <component v-if="currentStep" :is="currentStep"></component>
   </div>
 </template>
@@ -14,7 +14,7 @@ import SelectHotel from "./views/SelectHotel.vue";
 import SelectScene from "./views/SelectScene.vue";
 import MakePayment from "./views/MakePayment.vue";
 import ReviewReservation from "./views/ReviewReservation.vue";
-import StepProgress from "./views/StepProgress.vue";
+import StepProgress from "./components/StepProgress.vue";
 import SecondaryButton from "./components/SecondaryButton.vue";
 
 export default {

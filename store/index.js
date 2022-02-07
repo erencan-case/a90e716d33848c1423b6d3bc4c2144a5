@@ -2,7 +2,7 @@ import {createStore} from 'vuex'
 
 const store = createStore({
     state: {
-        currentStep: 'SelectHotel',
+        currentStep: 'ReviewReservation',
         currentHotel: null,
         hotels: [],
         order: {}
@@ -34,6 +34,13 @@ const store = createStore({
                 ...payload
             }
             state.currentStep = "MakePayment"
+        },
+        makePayment({state}, payload) {
+            state.order = {
+                ...state.order,
+                ...payload
+            }
+            state.currentStep = "ReviewReservation"
         }
     }
 })

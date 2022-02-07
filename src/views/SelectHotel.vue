@@ -66,11 +66,12 @@
 
 <script>
 import {mapActions, mapState} from "vuex";
-import PrimaryButton from "../components/PrimaryButton";
+import PrimaryButton from "../components/PrimaryButton.vue";
+import VuePaycard from "../components/VuePaycard.vue";
 
 export default {
   name: "SelectHotel",
-  components: {PrimaryButton},
+  components: {VuePaycard, PrimaryButton},
   data() {
     return {
       form: {
