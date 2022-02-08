@@ -6,6 +6,7 @@ import App from './App.vue'
 import './assets/style.css'
 import store from '../store';
 
+
 let app = createApp(App)
 app.use(store)
 app.use(ElementPlus, {

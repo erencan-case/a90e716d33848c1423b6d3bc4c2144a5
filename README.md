@@ -1,7 +1,16 @@
-# Vue 3 + Vite
+## OtelRez
+OtelRez is a simple hotel reservation project. Reservation can be created and updated using the API. Vuex 4 is used for the state structure.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+```bash
+# Install dependencies.
+npm install
 
-## Recommended IDE Setup
+# Start for development
+npm run serve
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+# Build for deployment
+npm run build
+
+# Preview build
+npm run preview
+```
